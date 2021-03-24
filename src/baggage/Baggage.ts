@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { BaggageEntry } from './Entry';
+import { BaggageEntry } from './Entry.js';
 
 /**
  * Baggage represents collection of key-value pairs with optional metadata.

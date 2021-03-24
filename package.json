@@ -2,6 +2,15 @@
   "name": "@opentelemetry/api",
   "version": "1.0.0-rc.0",
   "description": "Public API for OpenTelemetry",
+  "type": "module",
+  "exports": {
+    ".": "./build/lib/index.js",
+    "./lib/platform/index.js": {
+      "browser": "./build/lib/platform/browser/index.js",
+      "default": "./build/lib/platform/node/index.js"
+    },
+    "./lib": "./build/lib/*.js"
+  },
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "browser": {
@@ -11,10 +20,10 @@
   "repository": "https://github.com/open-telemetry/opentelemetry-js-api.git",
   "scripts": {
     "build": "npm run compile",
-    "clean": "tsc --build --clean",
+    "clean": "tsc --build --clean tsconfig.json tsconfig.esm.json",
     "codecov:browser": "nyc report --reporter=json && codecov -f coverage/*.json -p .",
     "codecov": "nyc report --reporter=json && codecov -f coverage/*.json -p .",
-    "compile": "tsc --build",
+    "compile": "tsc --build tsconfig.json tsconfig.esm.json",
     "docs": "typedoc",
     "docs:deploy": "gh-pages --dist docs/out",
     "docs:test": "linkinator docs/out --silent --skip david-dm.org",

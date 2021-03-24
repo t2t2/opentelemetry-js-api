@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { SpanContext } from './span_context';
-import { TraceFlags } from './trace_flags';
+import { SpanContext } from './span_context.js';
+import { TraceFlags } from './trace_flags.js';
 
 const VALID_TRACEID_REGEX = /^([0-9a-f]{32})$/i;
 const VALID_SPANID_REGEX = /^[0-9a-f]{16}$/i;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { SpanAttributes } from './attributes';
+import { SpanAttributes } from './attributes.js';
 
 /**
  * A sampling decision that determines how a {@link Span} will be recorded

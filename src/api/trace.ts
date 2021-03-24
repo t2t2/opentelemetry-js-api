@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-import { ProxyTracerProvider } from '../trace/ProxyTracerProvider';
-import { Tracer } from '../trace/tracer';
-import { TracerProvider } from '../trace/tracer_provider';
-import { isSpanContextValid } from '../trace/spancontext-utils';
+import { ProxyTracerProvider } from '../trace/ProxyTracerProvider.js';
+import { Tracer } from '../trace/tracer.js';
+import { TracerProvider } from '../trace/tracer_provider.js';
+import { isSpanContextValid } from '../trace/spancontext-utils.js';
 import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
+} from '../internal/global-utils.js';
 
 const API_NAME = 'trace';
 

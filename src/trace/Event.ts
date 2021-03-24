@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { SpanAttributes } from './attributes';
+import { SpanAttributes } from './attributes.js';
 
 /** A text annotation with a set of attributes. */
 export interface Event {

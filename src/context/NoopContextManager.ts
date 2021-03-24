@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { ROOT_CONTEXT } from './context';
-import * as types from './types';
+import { ROOT_CONTEXT } from './context.js';
+import * as types from './types.js';
 
 export class NoopContextManager implements types.ContextManager {
   active(): types.Context {

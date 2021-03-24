@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import { Baggage } from './Baggage';
-import { BaggageEntry, BaggageEntryMetadata } from './Entry';
-import { BaggageImpl } from './internal/baggage';
-import { baggageEntryMetadataSymbol } from './internal/symbol';
+import { Baggage } from './Baggage.js';
+import { BaggageEntry, BaggageEntryMetadata } from './Entry.js';
+import { BaggageImpl } from './internal/baggage.js';
+import { baggageEntryMetadataSymbol } from './internal/symbol.js';
 
-export * from './Baggage';
-export * from './Entry';
+export * from './Baggage.js';
+export * from './Entry.js';
 
 /**
  * Create a new Baggage with optional entries

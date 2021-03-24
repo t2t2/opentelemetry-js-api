@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
-import { SpanAttributes } from './attributes';
-import { Link } from './link';
-import { SamplingResult } from './SamplingResult';
-import { SpanKind } from './span_kind';
+import { Context } from '../context/types.js';
+import { SpanAttributes } from './attributes.js';
+import { Link } from './link.js';
+import { SamplingResult } from './SamplingResult.js';
+import { SpanKind } from './span_kind.js';
 
 /**
  * This interface represent a sampler. Sampling is a mechanism to control the

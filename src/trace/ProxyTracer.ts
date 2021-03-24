@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
-import { NOOP_TRACER } from './NoopTracer';
-import { ProxyTracerProvider } from './ProxyTracerProvider';
-import { Span } from './span';
-import { SpanOptions } from './SpanOptions';
-import { Tracer } from './tracer';
+import { Context } from '../context/types.js';
+import { NOOP_TRACER } from './NoopTracer.js';
+import { ProxyTracerProvider } from './ProxyTracerProvider.js';
+import { Span } from './span.js';
+import { SpanOptions } from './SpanOptions.js';
+import { Tracer } from './tracer.js';
 
 /**
  * Proxy tracer provided by the proxy tracer provider

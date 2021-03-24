@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
-import { NOOP_TEXT_MAP_PROPAGATOR } from '../propagation/NoopTextMapPropagator';
+import { Context } from '../context/types.js';
+import { NOOP_TEXT_MAP_PROPAGATOR } from '../propagation/NoopTextMapPropagator.js';
 import {
   defaultTextMapGetter,
   defaultTextMapSetter,
   TextMapGetter,
   TextMapPropagator,
   TextMapSetter,
-} from '../propagation/TextMapPropagator';
+} from '../propagation/TextMapPropagator.js';
 import {
   getGlobal,
   registerGlobal,
   unregisterGlobal,
-} from '../internal/global-utils';
+} from '../internal/global-utils.js';
 
 const API_NAME = 'propagation';
 

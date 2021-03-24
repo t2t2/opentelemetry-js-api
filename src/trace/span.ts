@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { Exception } from '../common/Exception';
-import { TimeInput } from '../common/Time';
-import { SpanAttributes, SpanAttributeValue } from './attributes';
-import { SpanContext } from './span_context';
-import { SpanStatus } from './status';
+import { Exception } from '../common/Exception.js';
+import { TimeInput } from '../common/Time.js';
+import { SpanAttributes, SpanAttributeValue } from './attributes.js';
+import { SpanContext } from './span_context.js';
+import { SpanStatus } from './status.js';
 
 /**
  * An interface that represents a span. A span represents a single operation

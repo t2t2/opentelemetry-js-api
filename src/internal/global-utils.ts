@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { diag } from '..';
-import { ContextManager } from '../context/types';
-import { DiagLogger } from '../diag';
-import { _globalThis } from '../platform';
-import { TextMapPropagator } from '../propagation/TextMapPropagator';
-import type { TracerProvider } from '../trace/tracer_provider';
-import { VERSION } from '../version';
-import { isCompatible } from './semver';
+import { diag } from '../index.js';
+import { ContextManager } from '../context/types.js';
+import { DiagLogger } from '../diag/index.js';
+import { _globalThis } from '../platform/index.js';
+import { TextMapPropagator } from '../propagation/TextMapPropagator.js';
+import type { TracerProvider } from '../trace/tracer_provider.js';
+import { VERSION } from '../version.js';
+import { isCompatible } from './semver.js';
 
 const major = VERSION.split('.')[0];
 const GLOBAL_OPENTELEMETRY_API_KEY = Symbol.for(

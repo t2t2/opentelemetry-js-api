@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { SpanContext } from './span_context';
+import { SpanContext } from './span_context.js';
 
 /**
  * A pointer to another span.

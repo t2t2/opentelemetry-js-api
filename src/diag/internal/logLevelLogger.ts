@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { DiagLogFunction, DiagLogger, DiagLogLevel } from '../types';
+import { DiagLogFunction, DiagLogger, DiagLogLevel } from '../types.js';
 
 export function createLogLevelDiagLogger(
   maxLevel: DiagLogLevel,

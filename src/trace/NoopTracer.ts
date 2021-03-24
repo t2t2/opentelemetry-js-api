@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { getSpanContext } from '../context/context';
-import { Context } from '../context/types';
-import { NoopSpan } from './NoopSpan';
-import { Span } from './span';
-import { isSpanContextValid } from './spancontext-utils';
-import { SpanOptions } from './SpanOptions';
-import { SpanContext } from './span_context';
-import { Tracer } from './tracer';
+import { getSpanContext } from '../context/context.js';
+import { Context } from '../context/types.js';
+import { NoopSpan } from './NoopSpan.js';
+import { Span } from './span.js';
+import { isSpanContextValid } from './spancontext-utils.js';
+import { SpanOptions } from './SpanOptions.js';
+import { SpanContext } from './span_context.js';
+import { Tracer } from './tracer.js';
 
 /**
  * No-op implementations of {@link Tracer}.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { DiagLogger, DiagLogFunction } from './types';
+import { DiagLogger, DiagLogFunction } from './types.js';
 
 const consoleMap: { n: keyof DiagLogger; c: keyof Console }[] = [
   { n: 'error', c: 'error' },

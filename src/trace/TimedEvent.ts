@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Event } from './Event';
-import { HrTime } from '../common/Time';
+import { Event } from './Event.js';
+import { HrTime } from '../common/Time.js';
 
 /**
  * Represents a timed event.

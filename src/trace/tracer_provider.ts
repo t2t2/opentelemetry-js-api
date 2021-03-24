@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Tracer } from './tracer';
+import { Tracer } from './tracer.js';
 
 /**
  * A registry for creating named {@link Tracer}s.

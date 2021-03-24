@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-import { Exception } from '../common/Exception';
-import { TimeInput } from '../common/Time';
-import { SpanAttributes } from './attributes';
-import { Span } from './span';
-import { SpanContext } from './span_context';
-import { SpanStatus } from './status';
-import { INVALID_SPAN_CONTEXT } from './spancontext-utils';
+import { Exception } from '../common/Exception.js';
+import { TimeInput } from '../common/Time.js';
+import { SpanAttributes } from './attributes.js';
+import { Span } from './span.js';
+import { SpanContext } from './span_context.js';
+import { SpanStatus } from './status.js';
+import { INVALID_SPAN_CONTEXT } from './spancontext-utils.js';
 
 /**
  * The NoopSpan is the default {@link Span} that is used when no Span

@@ -14,5 +14,5 @@
  * limitations under the License.
  */
 
-export * from './consoleLogger';
-export * from './types';
+export * from './consoleLogger.js';
+export * from './types.js';

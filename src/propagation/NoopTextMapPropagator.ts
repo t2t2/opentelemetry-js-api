@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { Context } from '../context/types';
-import { TextMapPropagator } from './TextMapPropagator';
+import { Context } from '../context/types.js';
+import { TextMapPropagator } from './TextMapPropagator.js';
 
 /**
  * No-op implementations of {@link TextMapPropagator}.

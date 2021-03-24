@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { Tracer } from './tracer';
-import { TracerProvider } from './tracer_provider';
-import { ProxyTracer } from './ProxyTracer';
-import { NOOP_TRACER_PROVIDER } from './NoopTracerProvider';
+import { Tracer } from './tracer.js';
+import { TracerProvider } from './tracer_provider.js';
+import { ProxyTracer } from './ProxyTracer.js';
+import { NOOP_TRACER_PROVIDER } from './NoopTracerProvider.js';
 
 /**
  * Tracer provider which provides {@link ProxyTracer}s.

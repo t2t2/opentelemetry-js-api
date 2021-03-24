@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-import { Context } from './types';
-import { Baggage, Span, SpanContext } from '../';
-import { NoopSpan } from '../trace/NoopSpan';
+import { Context } from './types.js';
+import { Baggage } from '../baggage/index.js';
+import { Span } from '../trace/span.js';
+import { SpanContext } from '../trace/span_context.js';
+import { NoopSpan } from '../trace/NoopSpan.js';
 
 /**
  * span key

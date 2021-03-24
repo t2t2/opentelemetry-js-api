@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-import { SpanAttributes } from './attributes';
-import { LinkContext } from './link_context';
+import { SpanAttributes } from './attributes.js';
+import { LinkContext } from './link_context.js';
 
 /**
  * A pointer from the current {@link Span} to another span in the same trace or

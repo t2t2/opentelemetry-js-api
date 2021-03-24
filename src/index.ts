@@ -14,32 +14,32 @@
  * limitations under the License.
  */
 
-export * from './baggage';
-export * from './common/Exception';
-export * from './common/Time';
-export * from './diag';
-export * from './propagation/NoopTextMapPropagator';
-export * from './propagation/TextMapPropagator';
-export * from './trace/attributes';
-export * from './trace/Event';
-export * from './trace/link_context';
-export * from './trace/link';
-export * from './trace/NoopTracer';
-export * from './trace/NoopTracerProvider';
-export * from './trace/ProxyTracer';
-export * from './trace/ProxyTracerProvider';
-export * from './trace/Sampler';
-export * from './trace/SamplingResult';
-export * from './trace/span_context';
-export * from './trace/span_kind';
-export * from './trace/span';
-export * from './trace/SpanOptions';
-export * from './trace/status';
-export * from './trace/TimedEvent';
-export * from './trace/trace_flags';
-export * from './trace/trace_state';
-export * from './trace/tracer_provider';
-export * from './trace/tracer';
+export * from './baggage/index.js';
+export * from './common/Exception.js';
+export * from './common/Time.js';
+export * from './diag/index.js';
+export * from './propagation/NoopTextMapPropagator.js';
+export * from './propagation/TextMapPropagator.js';
+export * from './trace/attributes.js';
+export * from './trace/Event.js';
+export * from './trace/link_context.js';
+export * from './trace/link.js';
+export * from './trace/NoopTracer.js';
+export * from './trace/NoopTracerProvider.js';
+export * from './trace/ProxyTracer.js';
+export * from './trace/ProxyTracerProvider.js';
+export * from './trace/Sampler.js';
+export * from './trace/SamplingResult.js';
+export * from './trace/span_context.js';
+export * from './trace/span_kind.js';
+export * from './trace/span.js';
+export * from './trace/SpanOptions.js';
+export * from './trace/status.js';
+export * from './trace/TimedEvent.js';
+export * from './trace/trace_flags.js';
+export * from './trace/trace_state.js';
+export * from './trace/tracer_provider.js';
+export * from './trace/tracer.js';
 
 export {
   INVALID_SPANID,
@@ -48,29 +48,29 @@ export {
   isSpanContextValid,
   isValidTraceId,
   isValidSpanId,
-} from './trace/spancontext-utils';
+} from './trace/spancontext-utils.js';
 
-export * from './context/context';
-export * from './context/NoopContextManager';
-export * from './context/types';
+export * from './context/context.js';
+export * from './context/NoopContextManager.js';
+export * from './context/types.js';
 
-import { ContextAPI } from './api/context';
-export type { ContextAPI } from './api/context';
+import { ContextAPI } from './api/context.js';
+export type { ContextAPI } from './api/context.js';
 /** Entrypoint for context API */
 export const context = ContextAPI.getInstance();
 
-import { TraceAPI } from './api/trace';
-export type { TraceAPI } from './api/trace';
+import { TraceAPI } from './api/trace.js';
+export type { TraceAPI } from './api/trace.js';
 /** Entrypoint for trace API */
 export const trace = TraceAPI.getInstance();
 
-import { PropagationAPI } from './api/propagation';
-export type { PropagationAPI } from './api/propagation';
+import { PropagationAPI } from './api/propagation.js';
+export type { PropagationAPI } from './api/propagation.js';
 /** Entrypoint for propagation API */
 export const propagation = PropagationAPI.getInstance();
 
-import { DiagAPI } from './api/diag';
-export type { DiagAPI } from './api/diag';
+import { DiagAPI } from './api/diag.js';
+export type { DiagAPI } from './api/diag.js';
 
 /**
  * Entrypoint for Diag API.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { baggageEntryMetadataSymbol } from './internal/symbol';
+import { baggageEntryMetadataSymbol } from './internal/symbol.js';
 
 export interface BaggageEntry {
   /** `String` value of the `BaggageEntry`. */
